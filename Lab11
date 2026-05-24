@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[ruled, linesnumbered]{algorithm2e}
+\begin{document}
+\begin{algorithm}[H]
+\SetAlgoLined
+\SetKwFunction{Dijkstra}{Dijkstra}
+\SetKwProg{Fn}{Function}{:}{}
+\Fn{\Dijkstra{$G, s$}}{
+$d[s] \gets 0$\;
+\ForEach{$v \in V$}{
+$d[v] \gets \infty$\;
+$prev[v] \gets$ undefined\;
+}
+$Q \gets V$\;
+\While{$Q$ is not empty}{
+$u \gets$ vertex in $Q$ with minimum $d[u]$\;
+Remove $u$ from $Q$\;
+\ForEach{$v \in$ neighbors of $u$}{
+$alt \gets d[u] + \mathrm{weight}(u, v)$\;
+\If{$alt < d[v]$}{
+$d[v] \gets alt$\;
+$prev[v] \gets u$\;
+}
+}
+}
+\KwRet{$d[], prev[]$}\;
+}
+\caption{Dijkstra's Algorithm}
+\label{algo:dijkstra}
+\end{algorithm}
+\end{document}

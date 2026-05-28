@@ -1,0 +1,53 @@
+delimiter $$
+
+create procedure merge_rollcall(in p_rollno int)
+
+begin
+
+    declare v_rollno int;
+    declare v_name varchar(50);
+    declare finished int default 0;
+    declare cnt int;
+
+    -- cursor declaration
+    declare cur_roll cursor for
+    select rollno, name
+    from n_rollcall
+    where rollno >= p_rollno;
+
+    -- handler declaration
+    declare continue handler for not found
+    set finished = 1;
+
+    -- open cursor
+    open cur_roll;
+
+    read_loop: loop
+
+        -- fetch values
+        fetch cur_roll into v_rollno, v_name;
+
+        -- exit condition
+        if finished = 1 then
+            leave read_loop;
+        end if;
+
+        -- check duplicate record
+        select count(*) into cnt
+        from o_rollcall
+        where rollno = v_rollno;
+
+        -- insert new record
+        if cnt = 0 then
+            insert into o_rollcall
+            values(v_rollno, v_name);
+        end if;
+
+    end loop;
+
+    -- close cursor
+    close cur_roll;
+
+end $$
+
+delimiter ;

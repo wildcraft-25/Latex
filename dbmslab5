@@ -1,0 +1,41 @@
+delimiter //
+
+create procedure employee_cursor_demo()
+begin
+
+declare done int default 0;
+declare v_id int;
+declare v_name varchar(50);
+declare v_age int;
+declare v_salary decimal(10,2);
+
+declare emp_cursor cursor for
+select e_id,e_name,age,salary from employee;
+
+declare continue handler for not found
+set done=1;
+
+open emp_cursor;
+
+read_loop: loop
+
+fetch emp_cursor into v_id,v_name,v_age,v_salary;
+
+if done=1 then
+leave read_loop;
+end if;
+
+select concat(
+'id: ',v_id,
+', name: ',v_name,
+', age: ',v_age,
+', salary: ',v_salary
+) as details;
+
+end loop;
+
+close emp_cursor;
+
+end //
+
+delimiter ;

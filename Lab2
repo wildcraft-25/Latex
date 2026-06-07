@@ -1,0 +1,32 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[paperheight=16cm,paperwidth=12cm,textwidth=10cm]{geometry}
+\usepackage{fancyhdr}
+\begin {document}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,RE]{\fontsize{8}{8}\textbf{My Frist Latex Document}}
+\fancyfoot{}
+\fancyfoot[LE,LO]{\thepage}
+\fancyfoot[RO,RE]{\fontsize{8}{8}\textbf{PES Institute of technology and management}}
+\section{\textbf{About PESITM}}
+\subsection{\textbf{facilities}}
+\begin{enumerate}
+\item frist point
+\item second point
+\end{enumerate}
+\section{\textbf{About Department of CSE}}
+\subsection{\textbf{Heighlights}}
+\subsection{\textbf{hello world}}
+\begin{itemize}
+\item frist sub-point
+\item second sub-point
+\end{itemize}
+\section{\textbf{About CSE}}
+\begin{itemize}
+\item frist
+\end{itemize}
+\subsection{\textbf{program}}
+\subsubsection{\textbf{data}}
+\begin{enumerate}
+\item frist point
+\item second point

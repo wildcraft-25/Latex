@@ -1,0 +1,47 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\begin{document}
+\thispagestyle{empty}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\begin{center}
+{\bf \large VISVESWARAIAH TECHNOLOGICAL UNIVERSITY}\\
+{\bf \large BELAGAVI-590 014}\\
+\end{center}
+\vspace{3mm}
+\centerline{\includegraphics[scale=.09]{VTU-LOGO.pdf}}
+\vspace{3mm}
+\begin{center}
+\begin{small} A Project Report
+\\on\\
+\vspace{3mm}
+\textbf{\large Title}
+\vspace{5mm}
+\\ Submitted for the Award of the Degree
+\\ of
+\\ Bachelor of Engineering
+\\ in
+\\ Computer Engineering
+\\ by
+\\ \vspace{.5cm}
+\textbf{Name}
+\\ SEM\\
+\vspace{.3cm}
+Under the guidance of\\
+\vspace{.3cm}
+\textbf{Name}
+\\ Designation
+\\ PES Institute of Technology and Management, Shivamogga
+\\ Visvesvaraya Technological University, Belgavi.\\
+\end{small}
+\vspace{3mm}
+\centerline{\includegraphics[scale=.1]{PESITM.pdf}}
+\vspace{3mm}
+Department of Computer Engineering\\
+PES Institute of Technology and Management, Shivamogga\\ 
+Visvesvaraya Technological University, Belgavi.\\
+\color{white}jg\color{black}\\ 
+April 2024\\
+\end{center}
+\end{document}

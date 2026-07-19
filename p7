@@ -1,0 +1,24 @@
+\documentclass[a4paper,12pt]{report}
+\begin{document}
+\section*{LaTeX Equations}
+\begin{equation}
+x=\frac{-b\pm \sqrt{b^{2}-4ac}}{2a}
+\end{equation}
+\begin{equation}
+=\frac{-2\pm \sqrt{2^{2}-4*(1)*(-8)}}{2*1}
+\end{equation}
+\begin{equation}
+=\frac{-2\pm \sqrt{4+32}}{2}
+\end{equation}
+\begin{equation}
+\mathrm{\varphi}_{\lambda}^{\sigma} A_{t} = \sum_{\pi\varepsilon 
+C_{t}}^{}sgn(\pi){\varphi}_{\lambda}^{\sigma}{\varphi}_{\lambda}^{\pi}
+\end{equation}
+\begin{equation}
+=\sum_{\pi\varepsilon C_{\sigma t}}{}sgn(\sigma ^{-1\tau \sigma })\varphi _{\sigma
+}^{\lambda}\varphi _{\sigma^-1\tau \sigma }^{\lambda}
+\end{equation}
+\begin{equation}
+=A_{\sigma \tau}\varphi _{\sigma }^{\lambda }
+\end{equation}
+\end{document}

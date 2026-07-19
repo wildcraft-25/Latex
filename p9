@@ -1,0 +1,15 @@
+\documentclass[a4paper,12pt] {report}
+
+\usepackage[top=2cm,bottom=2cm,right=2cm,left=2cm] {geometry}
+
+\usepackage[backend=bibtex] {biblatex}
+
+\bibliography{abc}
+
+\begin{document}
+
+it is \cite{one}citation example \cite{two},\cite{three}
+
+\printbibliography
+
+\end{document} 

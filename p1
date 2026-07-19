@@ -1,0 +1,24 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[paperheight=16cm,paperwidth=12cm,textwidth=10cm]{geometry}
+\usepackage{fancyhdr}
+\begin{document}
+% Set the page style to "fancy"...
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,RE]{\fontsize{8}{8} \textbf{My First Latex Document}}
+\fancyfoot{}
+\fancyfoot[LE,LO]{\thepage}
+\fancyfoot[RO,RE]{\fontsize{8}{8} \textbf{PES Institute of Technology and Management}}
+\section{\textbf{About PESITM}}
+\subsection {\textbf{Facilities}}
+\begin{enumerate}
+\item first point
+\item second point
+\end{enumerate}
+\section{\textbf{About Department of CE}}
+\subsection {\textbf{Heighlights}}
+\begin{itemize}
+\item first sub-point
+\item second sub-point
+\end{itemize}
+\end{document}

@@ -1,0 +1,28 @@
+\documentclass{report}
+\usepackage{tikz}
+\begin{document} 
+\begin{figure}[h]
+\begin{tikzpicture}
+ [every node/.style={shape=rectangle, rounded corners, draw, align=center}] 
+ \path[draw] 
+node(root)[red]{A} 
+[sibling distance=4cm,level distance=2cm]
+child{node{B} 
+[sibling distance=2cm,level distance=2cm]
+child{node{E}} 
+child{node{F}} 
+} 
+child{node{C}
+[sibling distance=2cm,level distance=2cm] 
+child{node{G}}
+child{node{H}}
+} 
+child{node{D}
+[sibling distance=2cm,level distance=2cm] 
+child{node{I}} 
+child{node{J}} 
+}; 
+\end{tikzpicture} 
+\caption{System family} 
+\end{figure} 
+\end{document}
